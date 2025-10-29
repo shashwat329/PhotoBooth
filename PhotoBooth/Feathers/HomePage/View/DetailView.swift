@@ -16,7 +16,7 @@ struct DetailView: View {
             TabView(selection: $currentIndex) {
                 ForEach(items.indices, id: \.self) { index in
                     ScrollView{
-                    VStack(spacing: 0) {
+                        VStack(alignment: .leading,spacing: 0) {
                         AsyncImageView(
                             url: URL(string: items[index].urls.full)!,
                             placeholder: AnyView(
@@ -28,8 +28,15 @@ struct DetailView: View {
                                 }
                             )
                         )
-                        Text(items[index].slug)
+                        Text(items[index].alt_description)
                             .font(.title3)
+                            HStack{
+                                Text(items[index].alt_description)
+                                    .foregroundColor(.gray)
+                                    .font(.caption)
+                                    .padding()
+                                Spacer()
+                            }
                     }
                     .tag(index)
                 }

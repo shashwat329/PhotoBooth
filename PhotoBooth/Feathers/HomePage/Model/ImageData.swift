@@ -11,6 +11,7 @@ struct ImageData: Codable,Identifiable {
     let slug: String
     let created_at: String
     let color: String
+    let alt_description: String
     let urls : urls
 }
 

@@ -16,8 +16,7 @@ struct HomeView: View {
         NavigationStack {
             VStack {
                 if vm.isLoading {
-                    ProgressView("Loading...")
-                        .padding()
+                    SkeletonView()
                 } else if let errorMessage = vm.errorMessage {
                     VStack {
                         Text("⚠️ \(errorMessage)")
