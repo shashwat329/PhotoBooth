@@ -138,7 +138,7 @@ open PhotoBooth.xcodeproj
 
 | Home View | Detail View |
 |:----------:|:------------:|
-| ![Home](screenshots/HomeView.jpg) | ![Detail](screenshots/DetailView.jpg) |
+| ![Home](Screenshots/HomeView.jpg) | ![Detail](Screenshots/DetailView.jpg) |
 
 ---
 
