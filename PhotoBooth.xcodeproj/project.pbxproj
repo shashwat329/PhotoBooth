@@ -29,6 +29,11 @@
 			path = PhotoBooth;
 			sourceTree = "<group>";
 		};
+		6BA5A0702EB219CC0066D85A /* Screenshots */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Screenshots;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +50,7 @@
 		6B8708472EAFF6AA00747D63 = {
 			isa = PBXGroup;
 			children = (
+				6BA5A0702EB219CC0066D85A /* Screenshots */,
 				6B8708522EAFF6AA00747D63 /* PhotoBooth */,
 				6B8708512EAFF6AA00747D63 /* Products */,
 			);
@@ -75,6 +81,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				6B8708522EAFF6AA00747D63 /* PhotoBooth */,
+				6BA5A0702EB219CC0066D85A /* Screenshots */,
 			);
 			name = PhotoBooth;
 			packageProductDependencies = (
