@@ -26,10 +26,11 @@ extension NetworkError: LocalizedError {
 }
 class WebService {
     func getData() async throws -> [ImageData]{
-        guard let baseURL = URL(string: "https://api.unsplash.com/photos/?client_id=\(accessKey)") else {
+        guard let baseURLString = Bundle.main.object(forInfoDictionaryKey: "BaseURL") as? String else {
             throw NetworkError.badURL
         }
-        let (data, response) = try await URLSession.shared.data(from: baseURL)
+        let url = URL(string: "\(baseURLString)?client_id=\(accessKey)")!
+        let (data, response) = try await URLSession.shared.data(from: url)
         guard let http = response as? HTTPURLResponse, http.statusCode == 200 else {
             throw NetworkError.badResponse
         }

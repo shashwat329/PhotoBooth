@@ -6,4 +6,4 @@
 //
 
 import Foundation
-let accessKey = "YOUR_UNSPLASH_ACCESS_KEY"
+let accessKey: String = "YOUR_ACCESS_KEY"
