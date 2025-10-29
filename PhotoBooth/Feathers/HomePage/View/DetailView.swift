@@ -23,7 +23,7 @@ struct DetailView: View {
                                 ZStack {
                                     Color.gray.opacity(0.1)
                                     ShimmerView()
-                                        .frame(height: 500)
+                                        .frame(height: 400)
                                         .tint(.blue)
                                 }
                             )

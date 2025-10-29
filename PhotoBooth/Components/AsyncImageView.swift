@@ -34,7 +34,7 @@ struct AsyncImageView: View {
             if let image = loader.image {
                 Image(uiImage: image)
                     .resizable()
-                    .frame(height: 500)
+                    .frame(width: 600,height: 600)
                     .transition(.opacity.combined(with: .scale))
                     .animation(.easeInOut(duration: 0.3), value: loader.image)
             } else if loader.isLoading {

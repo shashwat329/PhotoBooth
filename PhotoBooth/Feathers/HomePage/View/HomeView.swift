@@ -38,7 +38,7 @@ struct HomeView: View {
                                         switch phase {
                                         case .empty:
                                                 ShimmerView()
-                                                .frame(width: 120, height: 120)
+                                                .frame(width: 150, height: 150)
                                         case .success(let image):
                                             image
                                                 .resizable()
