@@ -26,14 +26,9 @@ extension NetworkError: LocalizedError {
 }
 class WebService {
     func getData() async throws -> [ImageData]{
-        guard let baseURL = URL(string: "https://api.unsplash.com/photos/?client_id=SGKShfzDyXrenQQjHewkq880LXpoWMjufIgYexGOAes") else {
+        guard let baseURL = URL(string: "https://api.unsplash.com/photos/?client_id=\(accessKey)") else {
             throw NetworkError.badURL
-                  }
-//        var request = URLRequest(url: baseURL)
-//                request.httpMethod = "GET"
-//        if let token = AuthManager.shared.getToken() {
-//                  request.setValue(token, forHTTPHeaderField: "Authorization")
-//              }
+        }
         let (data, response) = try await URLSession.shared.data(from: baseURL)
         guard let http = response as? HTTPURLResponse, http.statusCode == 200 else {
             throw NetworkError.badResponse

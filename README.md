@@ -1,6 +1,6 @@
-# 📸 PhotoBooth
+# PhotoBooth
 
-**PhotoBooth** is a SwiftUI application built using the **MVVM architecture**.  
+**PhotoBooth** is a SwiftUI application built using the **MVVM Architecture**.  
 It fetches and displays high-quality photos from the **Unsplash API** while maintaining a clean, scalable, and modular code structure.
 
 ---
@@ -106,7 +106,7 @@ let accessKey = "YOUR_UNSPLASH_ACCESS_KEY"
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/PhotoBooth.git
+git clone https://github.com/shashwat329/PhotoBooth.git
 ```
 
 ### 2. Navigate to the project directory
